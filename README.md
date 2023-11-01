@@ -6,8 +6,11 @@ Portfolio Showcase: Web Page Crafted with Bootstrap.
 This bootstrap-portfolio project was created to exhibit my proficiency in website development, serving as a comprehensive showcase of my skills for prospective employers. It contains essential details including my name, photo, bio, portfolio, and contact information.
 
 The HTML and CSS files were created from scratch, incorporating my newly acquired expertise in utilizing Bootstrap. Below, I've highlighted the integration of these skills within the project:
+- Adding essential bootstrap css link, popper and JS codes into html 5 doctype file.
+- Incorporating custom CSS stylesheet to modify Bootstrap components, loaded second after the essential Bootstrap stylesheet. This setup enables the project stylesheet to override Bootstrap classes, permitting the application of different styles to the same class in the customisation.
 - Using Bootstrap components including: Navigation bar, hero section created using jumbotron.
 - Using bootstrap solution to minimise the use of media queries.
+
 <!--
 - Implementing a flex display to structure the various sections.
 - Utilising a grid display to organize different projects within the 'Work' section and visually emphasize the primary project by presenting it prominently in a larger grid.
