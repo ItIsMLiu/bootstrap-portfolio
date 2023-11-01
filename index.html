@@ -12,35 +12,47 @@
 </head>
 
 <body>
-    <!-- Bootstrap Navs & tabs Code - modified combo of Right-aligned with .justify-content-end & Pills with dropdowns -->
-    <ul class="nav nav-pills justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+    <!-- Sticky top Navbar component added & customised with 'Pills with dropdowns'-->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-pills justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#work" role="button" aria-expanded="false">Work</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Horiseon's SEO</a></li>
+                  <li><a class="dropdown-item" href="#">Prework Study Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Mini Project Landing Page</a></li>
+                  <li><a class="dropdown-item" href="#">Demo</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">All Projects</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about/contact">About/Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     
     <!-- Bootstrap Jumbotron Code -->
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
         <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-          <button class="btn btn-primary btn-lg" type="button">Example button</button>
+          <h1 class="display-5 fw-bold">Front End Developer</h1>
+          <p class="col-md-8 fs-4">Highly motivated and detail-oriented front-end web developer with a unique background as a registered building architect, combining creative design expertise with a strong foundation in web development.</p>
+          <button class="btn btn-primary btn-lg" type="button">Get in touch now!</button>
         </div>
       </div>
 
