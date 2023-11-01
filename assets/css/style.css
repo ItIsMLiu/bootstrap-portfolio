@@ -76,14 +76,16 @@ nav a:hover,
 .py-5 {
     background-image: url(../images/02-hero-bg.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: left;
     height: 40vh;
+    min-height: 400px;
 }
 
 /* Front End Developer text */
 .py-5 h1{
     color: var(--colour2);
     font-size: 30px;
+    text-align: right;
     margin-right: 30px;
     position: relative;
     bottom: -150px;
@@ -103,7 +105,7 @@ display: none;
     margin-bottom: 30px;
     float: right;
     position: relative;
-    bottom: -200px;
+    bottom: -240px;
     right: -312px !important;
 }
 
