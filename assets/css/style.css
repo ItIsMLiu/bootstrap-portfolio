@@ -40,6 +40,10 @@
     margin: 5px;
 }
 
+nav a {
+    font-weight: bolder !important;
+}
+
 nav a:hover,
 .dropdown-item a:hover {
     background: var(--colour3) !important;
@@ -76,24 +80,32 @@ nav a:hover,
 .py-5 {
     background-image: url(../images/02-hero-bg.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: right;
     height: 40vh;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 /* Front End Developer text */
 .py-5 h1{
     color: var(--colour2);
     font-size: 30px;
+    margin-left: 30px;
+    position: relative;
+    bottom: -180px;
+    /*
     text-align: right;
     margin-right: 30px;
     position: relative;
-    bottom: -150px;
+    bottom: -170px;
     float: right;
+    */
 }
 
 .py-5 p {
-display: none;
+    color: var(--colour2);
+    margin-left: 30px;
+    position: relative;
+    bottom: -180px;
 }
 
 /* Get in touch now button */
@@ -101,21 +113,46 @@ display: none;
     background-color: var(--colour3);
     border: var(--colour3);
     border-radius: 0;
+    margin-left: 30px;
+    position: relative;
+    bottom: -180px;
+    /*
     padding-right: 30px;
     margin-bottom: 30px;
     float: right;
     position: relative;
     bottom: -240px;
-    right: -312px !important;
+    right: -312px !important; */
 }
 
 .btn-primary:hover {
     background: var(--colour4);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
     .nav-link {
         padding: 5px;
         display: inline-block;
+    }
+
+    .py-5 h1{
+        text-align: right;
+        margin-right: 30px;
+        position: relative;
+        bottom: 10px;
+        float: right;
+    }
+
+    .py-5 p {
+        text-align: right;
+        float: right;
+        margin-right: 30px;
+        position: relative;
+        bottom: -20px;
+        right: -200px;
+    }
+
+    .btn-primary {
+        display: none;
     }
 }
