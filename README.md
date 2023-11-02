@@ -55,6 +55,7 @@ Other resources used as guides:
 - Media Queries 101 by CSS Tricks: https://css-tricks.com/css-media-queries/
 - Media Query Documentation: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 - Github Pages Guide: https://pages.github.com/
+- Make Bootstrap Card Entirely Clickable: https://stackoverflow.com/questions/54404865/make-bootstrap-card-entirely-clickable
 
 ## License
 
