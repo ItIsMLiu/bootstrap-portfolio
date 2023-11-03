@@ -1,4 +1,32 @@
+/*-------------------------------------*//* Global styles */
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--colour1);
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+  
+p {
+    margin: 0;
+}
+
+/*-------------------------------------*/
 /* general */
+/* colours */
 :root {
     --colour1: #5A554E;
     --colour2: #EBE9E4;
@@ -6,13 +34,37 @@
     --colour4: #6f544e;
 }
 
+/* All buttons */
+.btn-primary {
+    background-color: var(--colour3);
+    border: var(--colour3);
+    border-radius: 0;
+    margin-left: 30px;
+    position: relative;
+    bottom: -180px;
+}
+
+button a {
+    color: var(--colour2);
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--colour4);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*-------------------------------------*/
+/* header */
 /* Nav bar */
-.navbar {
+.customNav {
     padding: 0;
     background: var(--colour2) !important;
 }
 
-.container-fluid {
+.navContain {
     padding: 0;
 }
 
@@ -29,6 +81,9 @@
 .navbar-brand:hover {
     background: var(--colour4) !important;
     color: var(--colour2);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* menu */
@@ -49,6 +104,9 @@ nav a:hover,
     background: var(--colour3) !important;
     color: var(--colour2) !important;
     border-radius: 0 !important;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -64,13 +122,15 @@ nav a:hover,
 
 .dropdown-menu {
     --bs-dropdown-bg: var(--colour2);
+    border-radius: 0 !important;
 }
 
 .navbar-toggler {
     margin-right: 30px;
     border-radius: 0;
 }
-
+/*-------------------------------------*/
+/* hero */
 /* hero banner */
 .p-5{
     padding: 0 !important;
@@ -85,20 +145,13 @@ nav a:hover,
     min-height: 500px;
 }
 
-/* Front End Developer text */
+/* hero text */
 .py-5 h1{
     color: var(--colour2);
     font-size: 30px;
     margin-left: 30px;
     position: relative;
     bottom: -180px;
-    /*
-    text-align: right;
-    margin-right: 30px;
-    position: relative;
-    bottom: -170px;
-    float: right;
-    */
 }
 
 .py-5 p {
@@ -108,33 +161,114 @@ nav a:hover,
     bottom: -180px;
 }
 
-/* Get in touch now button */
-.btn-primary {
-    background-color: var(--colour3);
-    border: var(--colour3);
-    border-radius: 0;
-    margin-left: 30px;
-    position: relative;
-    bottom: -180px;
-    /*
-    padding-right: 30px;
-    margin-bottom: 30px;
-    float: right;
-    position: relative;
-    bottom: -240px;
-    right: -312px !important; */
+/*-------------------------------------*/
+/* Main content section */
+/* general */
+.allContent {
+    width: 95%;
 }
 
-.btn-primary:hover {
-    background: var(--colour4);
+.secTitleContain {
+    text-align: right;
+    padding-right: 50px;
 }
 
+.card {
+    padding: 10px;
+    border: none;
+}
+
+.section-block {
+    border-left: solid var(--colour1);
+    margin: 20px 0px 20px 0px;
+}
+
+/* Work section */
+.card-img {
+    border-radius: 0px;
+    filter: brightness(50%);
+    border-bottom: solid 5px var(--colour1);
+    transition: all 0.5s ease-out;
+}
+
+.img-link:hover {
+    .card-img {
+        filter: none;
+    }
+}
+
+.subheading {
+    background: var(--colour3);
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    color: var(--colour2);
+}
+
+.card-img-overlay {
+    padding: 10px;
+}
+
+/* About/contact section */
+.nav-fill .nav-item {
+    text-align: left;
+    flex: none;
+}
+
+.nav-underline {
+    justify-content: space-between;
+}
+
+.nav-underline>.nav-item>a {
+    color: var(--colour1) !important;
+}
+
+/*-------------------------------------*/
+/* footer */
+footer {
+    text-align: center;
+    background: var(--colour1);
+    color: var(--colour2);
+    height: auto;
+    padding: 10px;
+}
+
+footer .card {
+    background: none;
+    color: var(--colour2);
+}
+
+footer .list-group-item {
+    background: none;
+    border: none;
+}
+
+footer .list-group-item a {
+    text-decoration: none;
+    color: var(--colour2);
+}
+
+footer .list-group-item a:hover {
+    border-bottom: solid var(--colour2) 2px;
+}
+
+footer .btn {
+    position: relative;
+    top: 20px;
+    margin: 0px;
+}
+
+/*-------------------------------------*/
+/* media queries */
 @media only screen and (max-width: 860px) {
+    /* nav bar */
     .nav-link {
         padding: 5px;
         display: inline-block;
     }
 
+    /* hero */
     .py-5 h1{
         text-align: right;
         margin-right: 30px;
@@ -154,5 +288,21 @@ nav a:hover,
 
     .btn-primary {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .secTitleContain {
+        text-align: center;
+        border-bottom: solid var(--colour1);
+        width: 90%;
+    }
+
+    .section-block {
+        border-left: none;
+    }
+
+    footer .btn {
+        display:inline-block;
     }
 }

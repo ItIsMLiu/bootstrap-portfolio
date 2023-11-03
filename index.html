@@ -12,9 +12,10 @@
 </head>
 
 <body>
-    <!-- Sticky top Navbar component added & customised with 'Pills with dropdowns'-->
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <!-- Sticky top Navbar component added & customised with 'Pills with dropdowns'; Create custom class 'customNav' -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary customNav">
+        <!-- create custom class 'navContain' -->
+        <div class="container-fluid navContain">
           <a class="navbar-brand" href="#home">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,72 +53,82 @@
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Minhui Liu</h1>
           <p class="col-md-8 fs-4">Front End Developer</p>
-          <button class="btn btn-primary btn-lg" type="button">Get in touch!</button>
+          <button class="btn btn-primary btn-lg" type="button"><a href="#git">Get in Touch!</a></button>
         </div>
     </div>
 
     <!-- All Cards -->
-    <div class="container-fluid">
+    <div class="container-fluid allContent">
         <!-- Work section card-->
         <div class="row align-items-center" id="work">
-            <!-- Work title card -->
-            <div class="container-fluid col-lg-2 col-md-12 col-sm-12"><h2>Work</h2></div>
-            <!-- Work body card -->
-            <div class="container-fluid col-lg-10 col-md-12 col-sm-12">
+            <!-- Work title card - add 'secTitleContain' class -->
+            <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>Work</h2></div>
+            <!-- Work body card - added class 'section-block' -->
+            <div class="container-fluid col-lg-10 col-md-12 col-sm-12 section-block">
                 <!-- use Bootstrap layout - columns - Column wrapping template-->
                 <div class="container">
                     <div class="row">
                         <div class="card col-lg-12 col-md-12 col-sm-12">
-                            <h5>Description</h5>
+                            <h5 class="card-title">Description:</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore a nostrum sed quidem eum fugiat, animi nihil, explicabo quae, mollitia repudiandae beatae. Error animi non fugiat repellendus, quo dolores id.</p>
                         </div>
                         <!-- Card 1 taking up whole width within div regardless screen size-->
-                        <a href="https://itismliu.github.io/horiseon-seo/" class="card col-lg-12 col-md-12 col-sm-12">
+                        <a href="https://itismliu.github.io/horiseon-seo/" class="card col-lg-12 col-md-12 col-sm-12 img-link">
                             <div id="horiseon">
                                 <img src="./assets/images/1.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                <h5 class="card-title">Horiseon's SEO</h5>
-                                <p class="card-text">HTML/CSS</p>
+                                    <div class="subheading">
+                                        <h5 class="card-title">Horiseon's SEO</h5>
+                                        <p class="card-text">HTML/CSS</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                         <!-- Card 2 taking up 50% width within div for large and medium size screen, whole width for small screen -->
-                        <a href="https://itismliu.github.io/prework-study-guide/" class="card col-lg-6 col-md-6 col-sm-12">
+                        <a href="https://itismliu.github.io/prework-study-guide/" class="card col-lg-6 col-md-6 col-sm-12 img-link">
                             <div id="prework">
                                 <img src="./assets/images/2.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                <h5 class="card-title">Prework Study Guide</h5>
-                                <p class="card-text">HTML/CSS/JS</p>
+                                    <div class="subheading">
+                                        <h5 class="card-title">Prework Study Guide</h5>
+                                        <p class="card-text">HTML/CSS/JS</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                         <!-- Card 3 taking up 50% width within div for large and medium size screen, whole width for small screen -->
-                        <a href="https://github.com/ItIsMLiu/Unit-01-Mini-Project-Landing-Page" class="card col-lg-6 col-md-6 col-sm-12">
+                        <a href="https://github.com/ItIsMLiu/Unit-01-Mini-Project-Landing-Page" class="card col-lg-6 col-md-6 col-sm-12 img-link">
                             <div id="mini">
                                 <img src="./assets/images/3.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                <h5 class="card-title">Mini Project Landing Page</h5>
-                                <p class="card-text">HTML/CSS</p>
+                                    <div class="subheading">
+                                        <h5 class="card-title">Mini Project Landing Page</h5>
+                                        <p class="card-text">HTML/CSS</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                         <!-- Card 4 taking up 50% width within div for large and medium size screen, whole width for small screen -->
-                        <a href="https://github.com/ItIsMLiu/Demo" class="card col-lg-6 col-md-6 col-sm-12">
+                        <a href="https://github.com/ItIsMLiu/Demo" class="card col-lg-6 col-md-6 col-sm-12 img-link">
                             <div id="demo">
                                 <img src="./assets/images/4.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                <h5 class="card-title">Demo</h5>
-                                <p class="card-text">HTML/CSS</p>
+                                    <div class="subheading">
+                                        <h5 class="card-title">Demo</h5>
+                                        <p class="card-text">HTML/CSS</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                         <!-- Card 5 taking up 50% width within div for large and medium size screen, whole width for small screen -->
-                        <a href="https://github.com/ItIsMLiu/portfolio-minhuiliu" class="card col-lg-6 col-md-6 col-sm-12" >
+                        <a href="https://github.com/ItIsMLiu/portfolio-minhuiliu" class="card col-lg-6 col-md-6 col-sm-12 img-link" >
                             <div id="portfolio">
                                 <img src="./assets/images/5.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay">
-                                <h5 class="card-title">Portfolio</h5>
-                                <p class="card-text">HTML/CSS</p>
+                                    <div class="subheading">
+                                        <h5 class="card-title">Portfolio</h5>
+                                        <p class="card-text">HTML/CSS</p>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -127,26 +138,22 @@
         </div>
         <!-- Skills section card -->
         <div class="row align-items-center" id="skills">
-            <!-- About/Contact title card -->
-            <div class="container-fluid col-lg-2 col-md-12 col-sm-12"><h2>Skills</h2></div>
-            <!-- About/Contact body card -->
-            <div class="container-fluid col-lg-10 col-md-12 col-sm-12">
+            <!-- About/Contact title card - add 'secTitleContain' class -->
+            <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>Skills</h2></div>
+            <!-- About/Contact body card - added class section-block -->
+            <div class="container-fluid col-lg-10 col-md-12 col-sm-12 section-block">
                 <!-- use Bootstrap layout - columns - Column wrapping template -->
                 <div class="container">
                     <div class="row">
                         <!-- Card 1 taking up whole width within div regardless screen size -->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <h5 class="card-title">Technical Skills:</h5>
-                            <p class="card-text">HTML</p>
-                            <p class="card-text">CSS</p>
-                            <p class="card-text">Javascript</p>
+                            <p class="card-text">HTML <br> CSS <br> Javascript</p>
                         </div>
                         <!-- Card 2 taking up whole width within div regardless screen size -->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <h5 class="card-title">Professional Skills:</h5>
-                            <p class="card-text">Design</p>
-                            <p class="card-text">Diligent</p>
-                            <p class="card-text">Teamwork</p>
+                            <p class="card-text">Design<br>Diligent<br>Teamwork</p>
                         </div>
                     </div>
                 </div>
@@ -154,10 +161,10 @@
         </div>
         <!-- About/Contact section card -->
         <div class="row align-items-center" id="about/contact">
-            <!-- About/Contact title card -->
-            <div class="container-fluid col-lg-2 col-md-12 col-sm-12"><h2>About/Contact</h2></div>
-            <!-- About/Contact body card -->
-            <div class="container-fluid col-lg-10 col-md-12 col-sm-12">
+            <!-- About/Contact title card - add 'secTitleContain' class -->
+            <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>About / Contact</h2></div>
+            <!-- About/Contact body card - added class section-block -->
+            <div class="container-fluid col-lg-10 col-md-12 col-sm-12 section-block">
                 <!-- use Bootstrap layout - columns - Column wrapping template-->
                 <div class="container">
                     <div class="row">
@@ -169,7 +176,7 @@
                         <!-- Card 2 taking up whole width within div regardless screen size-->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <!-- use bootstrap compnents - Navs & tabs - Fill and justify & Underline; Use bootstrap helpers - icon link -->
-                            <h5 class="card-title">Contact Me:</h5>
+                            <h5 class="card-title" id="git">Contact Me:</h5>
                             <ul class="nav nav-fill nav-underline">
                                 <li class="nav-item">
                                     <a class="nav-link icon-link" href="mailto:xxxx@outlook.com">
@@ -197,7 +204,40 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2023 Minhui Liu</p>
+        <div class="container">
+            <!-- bootstrap layout - cards -->
+            <div class="row">
+                <!-- card 1 -->
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Minhui Liu</h5>
+                      <p class="card-text">Front-end Web Developer</p>
+                      <a href="mailto:xxxx@outlook.com" class="btn btn-primary">Email Now!</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Important Links</h5>
+                      <!-- bootstrap components - list group -->
+                      <ul class="list-group">
+                        <li class="list-group-item"><a href="#home">Home</a></li>
+                        <li class="list-group-item"><a href="#work">Work</a></li>
+                        <li class="list-group-item"><a href="#skills">Skills</a></li>
+                        <li class="list-group-item"><a href="#about/contact">About/Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 3 full width-->
+                <div class="col-sm-12 col-lg-12 col-md-12">
+                    <p>&copy; 2023 - Minhui Liu</p>
+                </div>            
+            </div>
+        </div>
     </footer>
     <!-- include Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
