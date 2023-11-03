@@ -190,6 +190,11 @@ nav a:hover,
     margin: 20px 0px 20px 0px;
 }
 
+/* Add scroll margin to avoid header covering part of the section, reference link in README */
+#work, #skills, #about-contact, #horiseon, #prework, #mini, #demo, #portfolio {
+    scroll-margin-top: 5rem;
+} 
+
 /* Work section */
 .card-img {
     border-radius: 0px;

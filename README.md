@@ -39,13 +39,17 @@ N/A
 
 ## Usage 
 
-<!--
-To use the portfolio webpage, you can go through its various sections to explore infomation about me, my work, and my contact details. If you wish to review a specific section without having to scroll through the entire page, simply utilise the navigation bar located at the top right corner. From there, select one of the four options: 'About,' 'Work,' 'Contact' or 'CV' by clicking on your choice. This will promptly take you to the desired section on the webpage, where you can delve into the section contents.
+To use the portfolio webpage, you can go through its various sections to explore infomation my work, skills, infomation about me and my contact details. If you wish to review a specific section without having to scroll through the entire page, simply utilise the navigation bar located at the top right corner. From there, select one of the four options: 'Work', 'Skills', 'About/Contact' or 'CV' by clicking on your choice. Within the 'Work' dropdown menu, you can select the specific project for review. This will promptly take you to the desired section on the webpage, where you can delve into the section contents.
 
 This webpage is compatible with various screen sizes, as its layout will automatically respond and adapt. 
 
 The graphics of the links in the navigation bar, the 'contact me' section, and images in the 'work' section will dynamically change as you hover the cursor over them.
--->
+
+In the work section, when the project image is clicked, it will take you to the deployed project website or the associated project GitHub repository.
+
+In the contact me section, links to the contact methods will directly prompt you to email, call, or visit my GitHub profile.
+
+The footer section contains copyright information, important links, and an 'email now' call-to-action button.
 
 ## Credits
 
@@ -56,6 +60,7 @@ Other resources used as guides:
 - Media Query Documentation: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 - Github Pages Guide: https://pages.github.com/
 - Make Bootstrap Card Entirely Clickable: https://stackoverflow.com/questions/54404865/make-bootstrap-card-entirely-clickable
+- Scroll margin top: https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/
 
 ## License
 
