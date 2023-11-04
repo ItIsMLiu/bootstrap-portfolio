@@ -11,13 +11,6 @@ The HTML and CSS files were created from scratch, incorporating my newly acquire
 - Using and manipulating Bootstrap components including: Navigation bar, hero section created using jumbotron.
 - Using bootstrap solution to minimise the use of media queries.
 
-<!--
-- Implementing a flex display to structure the various sections.
-- Utilising a grid display to organize different projects within the 'Work' section and visually emphasize the primary project by presenting it prominently in a larger grid.
-- As the page adjusts to different screen sizes and devices, its layout becomes responsive, seamlessly adapting to any viewport. 
-- Upon clicking the work images, users are directed to the respective deployed application or github repository.
--->
-
 The URL of the deployed application: 
 
 The URL of the GitHub repository: https://github.com/ItIsMLiu/bootstrap-portfolio
