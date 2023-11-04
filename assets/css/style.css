@@ -293,6 +293,7 @@ footer .btn {
         text-align: right;
         float: right;
         margin-right: 30px;
+        margin-left: 0px;
         position: relative;
         bottom: -20px;
         right: -200px;

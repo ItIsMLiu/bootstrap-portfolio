@@ -17,13 +17,13 @@ The URL of the GitHub repository: https://github.com/ItIsMLiu/bootstrap-portfoli
 
 The URL of my previously deployed portfolio: https://itismliu.github.io/portfolio-minhuiliu/
 
-Screenshot of webpage when screen width is larger than 1000px:
+Screenshot of webpage when screen width is larger than 992px:
 ![alt text](./assets/images/screencapture1.png)
 
-Screenshot of webpage when screen width is between 600-1000px:
+Screenshot of webpage when screen width is between 768-992px:
 ![alt text](./assets/images/screencapture2.png)
 
-Screenshot of webpage when screen width is smaller than 1000px:
+Screenshot of webpage when screen width is smaller than 768px:
 ![alt text](./assets/images/screencapture3.png)
 
 ## Installation
