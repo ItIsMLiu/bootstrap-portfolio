@@ -8,7 +8,7 @@ This bootstrap-portfolio project was created to exhibit my proficiency in websit
 The HTML and CSS files were created from scratch, incorporating my newly acquired expertise in utilizing Bootstrap. Below, I've highlighted the integration of these skills within the project:
 - Adding essential bootstrap css link, popper and JS codes into html 5 doctype file.
 - Incorporating custom CSS stylesheet to modify Bootstrap components, loaded second after the essential Bootstrap stylesheet. This setup enables the project stylesheet to override Bootstrap classes, permitting the application of different styles to the same class in the customisation.
-- Using and manipulating Bootstrap components including: Navigation bar, hero section created using jumbotron.
+- Using and manipulating Bootstrap components including: Navigation bar, hero section created using jumbotron, button.
 - Using bootstrap solution to minimise the use of media queries.
 
 The URL of the deployed application: 

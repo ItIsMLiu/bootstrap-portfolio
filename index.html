@@ -10,45 +10,42 @@
     <!-- link project css file -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <!-- Sticky top Navbar component added & customised with 'Pills with dropdowns'; Create custom class 'customNav' -->
+    <!-- Header Banner: use Bootstrap sticky top Navbar component & customised with 'Pills with dropdowns'; Create custom class 'customNav' -->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary customNav">
         <!-- create custom class 'navContain' -->
         <div class="container-fluid navContain">
-          <a class="navbar-brand" href="#home">Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-pills justify-content-end">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#work" role="button" aria-expanded="false">Work</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#horiseon">Horiseon's SEO</a></li>
-                  <li><a class="dropdown-item" href="#prework">Prework Study Guide</a></li>
-                  <li><a class="dropdown-item" href="#mini">Mini Project Landing Page</a></li>
-                  <li><a class="dropdown-item" href="#demo">Demo</a></li>
-                  <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#work">All Projects</a></li>
+            <!-- portfolio icon -->
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <!-- toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-pills justify-content-end">
+                    <!-- 'Work' link with dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#work" role="button" aria-expanded="false">Work</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#horiseon">Horiseon's SEO</a></li>
+                            <li><a class="dropdown-item" href="#prework">Prework Study Guide</a></li>
+                            <li><a class="dropdown-item" href="#mini">Mini Project Landing Page</a></li>
+                            <li><a class="dropdown-item" href="#demo">Demo</a></li>
+                            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#work">All Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-contact">About/Contact</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">CV</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-contact">About/Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">CV</a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
     </nav>
     
-    <!-- Bootstrap Jumbotron Code -->
+    <!-- Hero Banner: use Bootstrap Jumbotron Code -->
     <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="home">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Minhui Liu</h1>
@@ -57,25 +54,27 @@
         </div>
     </div>
 
-    <!-- All Cards -->
+    <!-- Main content section: use bootstrap cards; All the Cards; added class 'allContent' for styling -->
     <div class="container-fluid allContent">
-        <!-- Work section card-->
+        <!-- Work section card, add id for nav bar to link to -->
         <div class="row align-items-center" id="work">
-            <!-- Work title card - add 'secTitleContain' class -->
+            <!-- Work title card - add 'secTitleContain' class for styling -->
             <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>Work</h2></div>
-            <!-- Work body card - added class 'section-block' -->
+            <!-- Work body card - added class 'section-block' for styling -->
             <div class="container-fluid col-lg-10 col-md-12 col-sm-12 section-block">
                 <!-- use Bootstrap layout - columns - Column wrapping template-->
                 <div class="container">
                     <div class="row">
+                        <!-- Card 1 description - take up whole width within div regardless screen size -->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <h5 class="card-title">Description:</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore a nostrum sed quidem eum fugiat, animi nihil, explicabo quae, mollitia repudiandae beatae. Error animi non fugiat repellendus, quo dolores id.</p>
                         </div>
-                        <!-- Card 1 taking up whole width within div regardless screen size-->
+                        <!-- Card 2 - take up whole width within div regardless screen size; use <a> element to warp card so that it is clickable; added class img-link for styling hover effect -->
                         <a href="https://itismliu.github.io/horiseon-seo/" class="card col-lg-12 col-md-12 col-sm-12 img-link">
+                            <!-- add id for nav bar to link to -->
                             <div id="horiseon">
-                                <img src="./assets/images/1.jpg" class="card-img" alt="...">
+                                <img src="./assets/images/1.jpg" class="card-img" alt="project placeholder image">
                                 <div class="card-img-overlay">
                                     <div class="subheading">
                                         <h5 class="card-title">Horiseon's SEO</h5>
@@ -84,10 +83,11 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Card 2 taking up 50% width within div for large and medium size screen, whole width for small screen -->
+                        <!-- Card 3 - take up 50% width within div for large and medium size screen, whole width for small screen; use <a> element to warp card so that it is clickable; added class img-link for styling hover effect -->
                         <a href="https://itismliu.github.io/prework-study-guide/" class="card col-lg-6 col-md-6 col-sm-12 img-link">
+                            <!-- add id for nav bar to link to -->
                             <div id="prework">
-                                <img src="./assets/images/2.jpg" class="card-img" alt="...">
+                                <img src="./assets/images/2.jpg" class="card-img" alt="project placeholder image">
                                 <div class="card-img-overlay">
                                     <div class="subheading">
                                         <h5 class="card-title">Prework Study Guide</h5>
@@ -96,10 +96,11 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Card 3 taking up 50% width within div for large and medium size screen, whole width for small screen -->
+                        <!-- Card 4 - take up 50% width within div for large and medium size screen, whole width for small screen; use <a> element to warp card so that it is clickable; added class img-link for styling hover effect -->
                         <a href="https://github.com/ItIsMLiu/Unit-01-Mini-Project-Landing-Page" class="card col-lg-6 col-md-6 col-sm-12 img-link">
+                            <!-- add id for nav bar to link to -->
                             <div id="mini">
-                                <img src="./assets/images/3.jpg" class="card-img" alt="...">
+                                <img src="./assets/images/3.jpg" class="card-img" alt="project placeholder image">
                                 <div class="card-img-overlay">
                                     <div class="subheading">
                                         <h5 class="card-title">Mini Project Landing Page</h5>
@@ -108,10 +109,11 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Card 4 taking up 50% width within div for large and medium size screen, whole width for small screen -->
+                        <!-- Card 5 - take up 50% width within div for large and medium size screen, whole width for small screen; use <a> element to warp card so that it is clickable; added class img-link for styling hover effect -->
                         <a href="https://github.com/ItIsMLiu/Demo" class="card col-lg-6 col-md-6 col-sm-12 img-link">
+                            <!-- add id for nav bar to link to -->
                             <div id="demo">
-                                <img src="./assets/images/4.jpg" class="card-img" alt="...">
+                                <img src="./assets/images/4.jpg" class="card-img" alt="project placeholder image">
                                 <div class="card-img-overlay">
                                     <div class="subheading">
                                         <h5 class="card-title">Demo</h5>
@@ -120,10 +122,11 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Card 5 taking up 50% width within div for large and medium size screen, whole width for small screen -->
+                        <!-- Card 6 taking up 50% width within div for large and medium size screen, whole width for small screen; use <a> element to warp card so that it is clickable; added class img-link for styling hover effect -->
                         <a href="https://github.com/ItIsMLiu/portfolio-minhuiliu" class="card col-lg-6 col-md-6 col-sm-12 img-link" >
+                            <!-- add id for nav bar to link to -->
                             <div id="portfolio">
-                                <img src="./assets/images/5.jpg" class="card-img" alt="...">
+                                <img src="./assets/images/5.jpg" class="card-img" alt="project placeholder image">
                                 <div class="card-img-overlay">
                                     <div class="subheading">
                                         <h5 class="card-title">Portfolio</h5>
@@ -137,7 +140,7 @@
             </div>
         </div>
 
-        <!-- Skills section card -->
+        <!-- Skills section card, add id for nav bar to link to -->
         <div class="row align-items-center" id="skills">
             <!-- "Skills" title card - add 'secTitleContain' class -->
             <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>Skills</h2></div>
@@ -156,7 +159,7 @@
                             <h5 class="card-title">Professional Skills:</h5>
                             <p class="card-text"><strong>Cross-Disciplinary Insights:</strong><br>My background in architecture enhances my ability to approach web design from a unique perspective, emphasizing aesthetics, structure, and functionality.<br><br><strong>Problem-Solving:</strong><br>Strong analytical skills enable me to tackle coding challenges with efficiency and creativity.<br><br><strong>Collaboration:</strong><br>Experienced in working within cross-functional teams, facilitating effective communication between designers and back-end developers.<br><br><strong>Adaptability:</strong><br>Committed to staying current with the latest web development trends and best practices.</p>
                         </div>
-                        <!-- Card 2 taking up whole width within div regardless screen size -->
+                        <!-- Card 3 taking up whole width within div regardless screen size -->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <h5 class="card-title">Language Skill:</h5>
                             <p class="card-text">English, Cantonese & Mandarin
@@ -167,7 +170,7 @@
             </div>
         </div>
 
-        <!-- About/Contact section card -->
+        <!-- About/Contact section card, add id for nav bar to link to -->
         <div class="row align-items-center" id="about-contact">
             <!-- About/Contact title card - add 'secTitleContain' class -->
             <div class="container-fluid col-lg-2 col-md-12 col-sm-12 secTitleContain"><h2>About / Contact</h2></div>
@@ -176,41 +179,49 @@
                 <!-- use Bootstrap layout - columns - Column wrapping template-->
                 <div class="container">
                     <div class="row">
-                        <!-- Card 1 taking up whole width within div regardless screen size-->
+                        <!-- Card 1 - about me - take up whole width within div regardless screen size-->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <h5 class="card-title">About Me:</h5>
                             <p class="card-text">Highly motivated and detail-oriented junior front-end web developer with a unique background as a registered building architect, combining creative design expertise with a strong foundation in web development. Passionate about crafting visually appealing, responsive, and user-friendly websites, I bring a fresh perspective to the field. <br><br> My dedication to continuous self-improvement ensures that I stay at the forefront of web development, making me an asset to contribute effectively in cutting-edge projects. I possess a creative flair for design, an eye for detail, and a commitment to delivering seamless, intuitive user experiences.</p>
                         </div>
-                        <!-- Card 2 taking up whole width within div regardless screen size-->
+                        <!-- Card 2 - contact me - take up whole width within div regardless screen size-->
                         <div class="card col-lg-12 col-md-12 col-sm-12">
                             <!-- use bootstrap compnents - Navs & tabs - Fill and justify & Underline; Use bootstrap helpers - icon link -->
                             <h5 class="card-title" id="git">Contact Me:</h5>
                             <ul class="nav nav-fill nav-underline">
+                                <!-- Email -->
                                 <li class="nav-item">
+                                    <!-- link with icon -->
                                     <a class="nav-link icon-link" href="mailto:xxxx@outlook.com">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
                                         Email: xxxx@outlook.com
                                     </a>
                                 </li>
+                                <!-- Mobile -->
                                 <li class="nav-item icon-link">
+                                    <!-- link with icon -->
                                     <a class="nav-link" href="tel: xxxxxxxxxxx">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/><path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
                                         Mobile: xxxxxxxxxxx
                                     </a>
                                 </li>
+                                <!-- Github -->
                                 <li class="nav-item icon-link">
+                                    <!-- link with icon -->
                                     <a class="nav-link" href="https://github.com/ItIsMLiu">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>    
                                         Github
                                     </a>
                                 </li>
+                                <!-- Location -->
                                 <li class="nav-item icon-link">
+                                    <!-- link with icon -->
                                     <a class="nav-link" href="https://www.google.com/maps/place/Bristol/@51.4683734,-2.7555235,11z/data=!3m1!4b1!4m6!3m5!1s0x4871836681b3d861:0x8ee4b22e4b9ad71f!8m2!3d51.454513!4d-2.58791!16zL20vMDk1bDA?entry=ttu">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>  
                                         Bristol
                                     </a>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -218,11 +229,12 @@
         </div>
     </div>
 
+    <!-- Footer section: use bootstrap cards; -->
     <footer>
         <div class="container">
             <!-- bootstrap layout - cards -->
             <div class="row">
-                <!-- card 1 -->
+                <!-- card 1 - Profile -->
                 <div class="col-sm-6 mb-3 mb-sm-0">
                   <div class="card">
                     <div class="card-body">
@@ -232,7 +244,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- card 2 -->
+                <!-- card 2 - Links -->
                 <div class="col-sm-6">
                   <div class="card">
                     <div class="card-body">
